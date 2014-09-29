@@ -104,5 +104,3 @@ let g:rails_default_database="sqlite3"
 filetype on
 filetype indent on
 filetype plugin on
-
-call pathogen#infect()
