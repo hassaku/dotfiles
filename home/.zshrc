@@ -8,7 +8,7 @@ source $ZSH/oh-my-zsh.sh
 
 setopt extended_history
 
-export EDITOR="/usr/local/bin/vim"
+export EDITOR="vim"
 export AWS_CONFIG_FILE=~/.aws/config
 
 export PATH="$HOME/.rbenv/bin:$PATH"
