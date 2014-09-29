@@ -1,0 +1,36 @@
+update
+upgrade
+
+install caskroom/cask/brew-cask
+tap caskroom/homebrew-versions
+
+# Formula
+install --disable-etcdir zsh
+install git
+install hg
+install svn
+install rbenv
+install ruby-build
+install mysql
+install sqlite
+install postgresql
+install phantomjs
+install node.js
+install terminal-notifier
+install ctags
+install heroku-toolbelt
+install tmux
+
+cask install firefox
+cask install google-chrome
+cask install google-japanese-ime
+cask install dropbox
+cask install kobito
+cask install onepassword
+cask install skype
+cask install totalfinder
+cask install totalterminal
+cask install virtualbox
+cask install thunderbird-ja
+
+cleanup
