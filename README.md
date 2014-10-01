@@ -17,3 +17,9 @@ $ homesick clone hassaku/dotfiles
 $ cd ~
 $ homesick symlink dotfiles
 ```
+
+## Uninstall an application
+
+```
+$ brew cask uninstall XXXXXX
+```
