@@ -28,8 +28,6 @@ cask install dropbox
 cask install kobito
 cask install onepassword
 cask install skype
-cask install totalfinder
-cask install totalterminal
 cask install virtualbox
 cask install thunderbird-ja
 
