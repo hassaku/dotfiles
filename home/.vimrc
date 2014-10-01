@@ -101,6 +101,29 @@ autocmd BufWritePre * :%s/\t/ /ge
 let g:rails_level=4
 let g:rails_default_database="sqlite3"
 
+""""""""""""""""""
+" プラグイン設定
+"
+" usage:
+" $ git clone https://github.com/Shougo/neobundle.vim ~/.vim/neobundle.vim.git
+"
+" [.vimrc]
+" NeoBundle 'user_name/repository_name' # githubから取得
+" NeoBundle 'script_name'               # vim-scriptsから取得
+"
+" [vim command]
+" :NeoBundleInstall  # インストール
+" :NeoBundleInstall! # アップデート
+" :NeoBundleClean    # アンインストール
+if has('vim_starting')
+  set runtimepath+=~/.vim/neobundle.vim.git
+endif
+call neobundle#rc(expand('~/.vim/.bundle'))
+
+NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'tpope/vim-rails'
+NeoBundle 'tpope/vim-endwise'
+
 filetype on
 filetype indent on
 filetype plugin on
