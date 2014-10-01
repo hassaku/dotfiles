@@ -29,6 +29,7 @@ cask install kobito
 cask install onepassword
 cask install skype
 cask install virtualbox
+cask install vagrant
 cask install thunderbird-ja
 
 cleanup
