@@ -3,6 +3,7 @@ upgrade
 
 install caskroom/cask/brew-cask
 tap caskroom/homebrew-versions
+tap sanemat/font
 
 # Formula
 install --disable-etcdir zsh
@@ -20,6 +21,8 @@ install terminal-notifier
 install ctags
 install heroku-toolbelt
 install tmux
+install wget
+install curl
 
 cask install firefox
 cask install google-chrome
@@ -31,5 +34,23 @@ cask install skype
 cask install virtualbox
 cask install vagrant
 cask install thunderbird-ja
+
+# ricty font
+#  [settings]
+#  $ cp -f /usr/local/Cellar/ricty/3.x.x/share/fonts/Ricty*.ttf ~/Library/Fonts/
+#  $ fc-cache -vf
+cask install xquartz
+install ricty
+
+# to install old ruby versions
+tap homebrew/dupes
+install apple-gcc42
+
+# to install rmagick rubygem
+#  [settings]
+#  $ ln -s /usr/local/Cellar/imagemagick/6.x.x/lib/libMagick++{-6.Q16,}.dylib
+#  $ ln -s /usr/local/Cellar/imagemagick/6.x.x/lib/libMagickCore{-6.Q16.2,}.dylib
+#  $ ln -s /usr/local/Cellar/imagemagick/6.x.x/lib/libMagickWand{-6.Q16.2,}.dylib
+install imagemagick
 
 cleanup
