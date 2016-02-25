@@ -55,10 +55,10 @@ set fileencoding=utf-8
 set expandtab
 
 "ファイル内の <Tab> が対応する空白の数
-set tabstop=2
+set tabstop=4
 
 "自動インデントの各段階に使われる空白の数
-set shiftwidth=2
+set shiftwidth=4
 
 "行頭の余白内で Tab を打ち込むと、'shiftwidth' の数だけインデントする
 set smarttab
@@ -93,9 +93,9 @@ autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
 highlight Pmenu ctermbg=238 gui=bold
 
 " 保存時に行末の空白削除
-autocmd BufWritePre * :%s/\s\+$//ge
+"autocmd BufWritePre * :%s/\s\+$//ge
 " 保存時にtabをスペースに変換する
-autocmd BufWritePre * :%s/\t/ /ge
+"autocmd BufWritePre * :%s/\t/ /ge
 
 " rails.vim
 let g:rails_level=4
