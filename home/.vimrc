@@ -118,11 +118,15 @@ let g:rails_default_database="sqlite3"
 if has('vim_starting')
   set runtimepath+=~/.vim/neobundle.vim.git
 endif
-call neobundle#rc(expand('~/.vim/.bundle'))
+call neobundle#begin(expand('~/.vim/bundle/'))
+NeoBundleFetch 'Shougo/neobundle.vim'
+call neobundle#end()
 
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'tpope/vim-rails'
 NeoBundle 'tpope/vim-endwise'
+NeoBundle 'fatih/vim-go'
+NeoBundle 'kchmck/vim-coffee-script'
 
 filetype on
 filetype indent on
